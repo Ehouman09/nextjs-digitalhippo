@@ -21,16 +21,15 @@ export default buildConfig({
   routes: {
     admin: '/sell',
   },
-  admin: {},
-//   admin: {
-//     user: 'users',
-//     bundler: webpackBundler(),
-//     meta: {
-//       titleSuffix: '- DigitalHippo',
-//       favicon: '/favicon.ico',
-//       ogImage: '/thumbnail.jpg',
-//     },
-//   },
+  admin: {
+    user: 'users',
+    bundler: webpackBundler(),
+    meta: {
+      titleSuffix: '- DigitalHippo',
+      favicon: '/favicon.ico',
+      ogImage: '/thumbnail.jpg',
+    },
+  },
   rateLimit: {
     max: 2000,
   },
